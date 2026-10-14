@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#172521" />
+    <title>Un impulso creativo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main class="inspiration" aria-labelledby="page-title">
+      <img
+        class="backdrop"
+        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=2200&q=85"
+        alt="Mesa de trabajo con un portátil y una planta junto a la ventana"
+      />
+      <div class="shade" aria-hidden="true"></div>
+
+      <header class="topbar">
+        <a class="wordmark" href="index.html" aria-label="Punto de partida, inicio">PUNTO<span>.</span></a>
+        <p>UN IMPULSO CREATIVO</p>
+      </header>
+
+      <section class="content">
+        <p class="eyebrow"><span aria-hidden="true"></span> UNA PAUSA PARA CREAR</p>
+        <h1 id="page-title">Las ideas llegan<br />cuando empiezas.</h1>
+        <blockquote id="idea" aria-live="polite">No necesitas tenerlo todo claro. Solo dar el primer paso.</blockquote>
+        <button id="new-idea" type="button">Otra idea <span aria-hidden="true">-&gt;</span></button>
+      </section>
+
+      <footer class="footer">
+        <span>UNA IDEA A LA VEZ</span>
+        <span class="idea-count">01 / 04</span>
+        <time class="clock" id="clock" aria-label="Hora local">
+          <span class="clock-face" aria-hidden="true">
+            <span class="clock-hand clock-hour" id="clock-hour"></span>
+            <span class="clock-hand clock-minute" id="clock-minute"></span>
+            <span class="clock-hand clock-second" id="clock-second"></span>
+            <span class="clock-center"></span>
+          </span>
+          <span class="visually-hidden" id="clock-time"></span>
+        </time>
+      </footer>
+    </main>
+  </body>
+</html>
